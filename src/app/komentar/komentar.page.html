@@ -1,0 +1,31 @@
+<ion-header> 
+  
+  <ion-item> <ion-button href="/tabs/tab4"  >
+     BACK
+   </ion-button>
+  <ion-title>Komentar</ion-title>
+  
+ </ion-item>
+</ion-header>
+
+<style>
+    :root {
+        --ion-safe-area-top:30px;
+        --ion-safe-area-bottom: 33px;
+      }</style>
+      
+          <ion-content fullscreen>
+        
+            
+         
+                  
+                <ion-list>
+                    <ion-item class="listKomentar" *ngFor="let cm of Komentar" routerLink="/detailkomentar/{{cm.id}}">
+                   Email : {{ cm.email }}</ion-item>
+                </ion-list>
+                  <ion-card-content>
+                      
+                      
+                     
+                    
+             

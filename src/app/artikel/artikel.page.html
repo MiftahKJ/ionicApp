@@ -1,0 +1,39 @@
+<ion-header> 
+  
+   <ion-item> <ion-button href="/tabs/tab4"  >
+      Back
+    </ion-button>
+   <ion-title>Article</ion-title>
+   
+  </ion-item>
+</ion-header>
+
+<style>
+    :root {
+        --ion-safe-area-top:30px;
+        --ion-safe-area-bottom: 33px;
+      }</style>
+      
+          <ion-content fullscreen>
+        
+            
+              <ion-card class="listArtikel" *ngFor="let cr of ARTIKEL"  >
+                  
+                  <ion-card-header >
+                    
+                    <ion-card-title>{{ cr.title }}</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                      
+                      
+                      <ion-button slot="info" routerLink="/detail/{{cr.id}}">Read More</ion-button>
+                  </ion-card-content>
+                
+                
+                      </ion-card>
+                    
+              
+             
+              </ion-content>
+    
+

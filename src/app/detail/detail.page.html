@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" >
+          <ion-back-button href="/artikel"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Artikel {{ARTIKEL.id}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<style>
+    :root {
+        --ion-safe-area-top:50px;
+        --ion-safe-area-bottom: 50px;
+      }</style>
+<ion-content fullscreen>
+    <ion-card>
+      
+      <ion-card-header>
+        
+        <ion-card-title>{{ARTIKEL.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ARTIKEL.body}}
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  

@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+  <ion-buttons slot="start" >
+    <ion-back-button href="/Komentar"></ion-back-button>
+  </ion-buttons>
+    <ion-title>Detail Komentar</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    
+    <ion-card-header>
+      
+      <ion-card-title>{{Komentar.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content><p>email :{{Komentar.email }}</p>
+      komentar :<br>
+      {{Komentar.body}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
